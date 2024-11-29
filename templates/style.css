@@ -1,0 +1,204 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Slightly lighter background */
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #2d3e50; /* Darker shade for better contrast */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient background for fun */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #6a5acd; /* Soft purple */
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f1f1f1; /* Light gray for alternate rows */
+}
+
+table tr:hover {
+    background-color: #e0f7fa; /* Soft cyan on hover */
+}
+
+table td {
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff7e5f; /* Coral color for primary action */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 126, 95, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #feb47b; /* Gradient on hover */
+    box-shadow: 0 6px 10px rgba(255, 180, 123, 0.4);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Links in Table */
+table a {
+    color: #6a5acd; /* Soft purple for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+table a:hover {
+    color: #483d8b; /* Darker purple */
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Delete Confirmation Page Styling */
+.delete-container {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff3e6; /* Soft peach background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.delete-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Button styles for delete and cancel buttons */
+button, .btn-cancel {
+    padding: 14px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-weight: bold;
+    width: 120px; /* Consistent button width */
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #ff4d4d; /* Red for delete */
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 77, 77, 0.3);
+}
+
+.btn-delete:hover {
+    background-color: #ff3333;
+    box-shadow: 0 6px 14px rgba(255, 51, 51, 0.4);
+}
+
+.btn-delete:active {
+    transform: scale(0.98);
+}
+
+/* Cancel Button */
+.btn-cancel {
+    background-color: #4caf50; /* Green for cancel */
+    color: white;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+.btn-cancel:hover {
+    background-color: #388e3c;
+    box-shadow: 0 6px 14px rgba(56, 142, 60, 0.4);
+}
+
+.btn-cancel:active {
+    transform: scale(0.98);
+}
+
+/* Cancel link inside button */
+.btn-cancel a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* Hover effect for Cancel link */
+.btn-cancel a:hover {
+    text-decoration: none;
+}
